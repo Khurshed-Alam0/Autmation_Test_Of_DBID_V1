@@ -173,9 +173,6 @@ public class login extends baseClass{
     Thread.sleep(1000);
     ubidBusinessType.selectByIndex(1);*/
 
-    // assuming driver is an instance of WebDriver
-// assuming you have imported the necessary classes
-
     WebElement ubidBusinessOwnerType = driver.findElement(By.id("owner_type"));
     JavascriptExecutor js = (JavascriptExecutor) driver;
     String script = "arguments[0].selectedIndex = 1;";
