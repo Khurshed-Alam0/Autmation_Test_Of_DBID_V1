@@ -1,19 +1,9 @@
-//import org.junit.Test;
-//import org.junit.experimental.theories.Theories;
-//import org.omg.CORBA.ORB;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.*;
-//import org.openqa.selenium.support.ui.ExpectedCondition;
-//mport org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
-//import java.time.Duration;
 
 
 public class login extends baseClass{
@@ -337,7 +327,6 @@ public class login extends baseClass{
 
 // Check if the element is displayed and enabled
     if (choseFilePowerOfAttorny.isDisplayed() && choseFilePowerOfAttorny.isEnabled()) {
-        // Enter the file path and submit the form
         choseFilePowerOfAttorny.sendKeys("G:\\JAVA\\DBID_V1\\src\\test\\java\\1.png");
     }
 
