@@ -33,7 +33,7 @@ public class baseClass {
         Thread.sleep(1000);
       /*  WebElement clearForm=driver.findElement(By.xpath("//a[contains(text(),'ফর্মের তথ্য মুছুন')]"));
         clearForm.click();*/
-//        driver.quit();
+      //  driver.quit();
     }
 
 

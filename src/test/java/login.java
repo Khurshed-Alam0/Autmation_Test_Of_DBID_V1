@@ -51,15 +51,15 @@ public class login extends baseClass{
     Thread.sleep(1000);
 
     WebElement orgNameBengali= driver.findElement(By.id("company_name"));
-    orgNameBengali.sendKeys("আমার ব্যাবসা");
+    orgNameBengali.sendKeys("আমার ব্যাবসা২");
 
     WebElement orgNameEng= driver.findElement(By.id("company_name_en"));
-    orgNameEng.sendKeys("amar bebsa");
+    orgNameEng.sendKeys("amar bebsa2");
     Thread.sleep(2000);
 
     WebElement website= driver.findElement(By.name("business-web-url"));
     website.click();
-    website.sendKeys("www.dhakainside.com.bd");
+    website.sendKeys("test.com");
     Thread.sleep(1000);
 
     /*WebElement officeAddressBn= driver.findElement(By.name("company_address_bangla_division"));
@@ -98,21 +98,21 @@ public class login extends baseClass{
     JavascriptExecutor executor2 = (JavascriptExecutor)driver;
     executor.executeScript("arguments[0].value = 'dhaka';", officeAddressEn);
 
-    /*Thread.sleep(2000);
+    /*
     WebElement officeAddressEn= driver.findElement(By.name("company_address_division"));
     officeAddressEn.sendKeys("dhaka");*/
 
 
     WebElement comMobile = driver.findElement(By.name("company_mobile_no"));
     JavascriptExecutor executor3 = (JavascriptExecutor)driver;
-    executor.executeScript("arguments[0].value = '018624582490';", comMobile);
+    executor.executeScript("arguments[0].value = '01662458249';", comMobile);
 
    /* WebElement comMobile= driver.findElement(By.name("company_mobile_no"));
     comMobile.sendKeys("01862458249");*/
 
     WebElement companyEmail = driver.findElement(By.name("company_email"));
     JavascriptExecutor executor4 = (JavascriptExecutor)driver;
-    executor.executeScript("arguments[0].value = 'test10@gmail.com';", companyEmail);
+    executor.executeScript("arguments[0].value = 'test1101@gmail.com';", companyEmail);
 
    /* WebElement companyEmail= driver.findElement(By.name("company_email"));
     companyEmail.sendKeys("test@gmail.com");*/
@@ -337,6 +337,7 @@ public class login extends baseClass{
     WebElement NextBtn4=driver.findElement(By.id("nextBtn"));
     NextBtn4.click();
 
+    Thread.sleep(2000);
     WebElement NextBtn5=driver.findElement(By.id("nextBtn"));
     NextBtn5.click();
 
@@ -353,12 +354,8 @@ public class login extends baseClass{
     }
 
 
-    WebElement finalSubmitBtn=driver.findElement(By.id("nextBtn"));
-    finalSubmitBtn.click();
-
-
-
-
+   /* WebElement finalSubmitBtn=driver.findElement(By.id("nextBtn"));
+    finalSubmitBtn.click();*/
 
 
 }
